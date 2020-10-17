@@ -1,9 +1,7 @@
 const express = require('express');
 const httpProxy = require('express-http-proxy');
 const next = require('next');
-const dotenv = require('dotenv');
-
-dotenv.config(); 
+require('dotenv').config();
 
 const analyticsURL = process.env.ANALYTICS_URL;
 
