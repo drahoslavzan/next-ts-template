@@ -1,6 +1,9 @@
 const sitemap = require('nextjs-sitemap-generator');
+const dotenv = require('dotenv');
 
-const site = 'https://ideasmuscle.com';
+dotenv.config(); 
+
+const site = process.env.SITE_NAME;
 
 sitemap({
     /*
